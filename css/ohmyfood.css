@@ -1,0 +1,151 @@
+/* Global CSS */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(../fonts/Shrikhand-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf) format ('truetype');
+    font-display: swap;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#header-logo {
+    width: 40%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.location-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color:#EAEAEA;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 6px 0px inset;
+}
+
+.location-dot {
+    border: none;
+}
+
+.location-form input {
+    border: none;
+    background-color: #EAEAEA;
+}
+
+::placeholder {
+    color: black;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+}
+
+.main {
+    color: #9356DC;
+    color: #FF79DA;
+    color: #99E2D0;
+}
+
+/* Homepage CSS */
+
+.explore-container {
+    background-color: #F6F6F6;
+    padding: 30px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-container h1 { /*cannot get the right bold font working here */
+    font-family: Roboto-Regular;
+    font-size: 28px;
+    font-weight:900;
+    text-align: center;
+}
+
+.explore-container p {
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.explore-container button {
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF79DA;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.how-it-works-container h1 { /* also needs to be bold heading here */
+    font-family: Roboto-Regular;
+    font-size: 28px;
+    margin: 50px 0 20px 20px;
+}
+
+.instruction-card {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    margin: 20px;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.instruction-card:hover {
+    background-color: #F8ECFC;
+}
+
+.instruction-number {
+    margin-right: 20px;
+    color: white;
+    background-color: #9356DC;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+}
+
+.instruction-icon {
+    margin: 0 20px 0 50px;
+}
+
+.instruction-icon:hover { /* Can I get this icon to change colour when the entire instruction-card is hovered? */
+    color:#9356DC;
+}
+
+.instruction-card p {
+    font-family: Roboto-Regular;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Menu Pages CSS */
+/* The Enchanted Plate CSS */
+/* Bastille CSS */
+/* Le Gourmand CSS */
+/* The Full Palette CSS */
