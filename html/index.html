@@ -5,8 +5,8 @@
     <title>ohmyfood</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalise.css" type="text/css" rel="stylesheet">
-    <link href="css/ohmyfood.css" type="text/css" rel="stylesheet">
+    <link href="../css/normalise.css" type="text/css" rel="stylesheet">
+    <link href="../css/ohmyfood.css" type="text/css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a127163454.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +14,7 @@
 <body>
 <header>
     <div class="header">
-        <img id="header-logo" src="images/ohmyfood-logo.png" alt="Oh My Food company logo">
+        <img id="header-logo" src="../images/ohmyfood-logo.png" alt="Oh My Food company logo in black">
     </div>
     <div class="location-form">
         <form id="location-form" role="search-location">
@@ -59,30 +59,30 @@
             <h1>Restaurants</h1>
                 <div class="restaurant-card-container">
 
-                    <div class="restaurant-card" id="the-full-palette-card">
+                    <a href="the-full-palette.html"><div class="restaurant-card" id="the-full-palette-card">
                         <div class="restaurant-image-container">
-                            <img id="the-full-pallette-image" src="images/the-full-palette.jpg" alt="Photo of a meal at The Full Palette Restaurant">
+                            <img id="the-full-pallette-image" src="../images/the-full-palette.jpg" alt="Photo of a meal at The Full Palette Restaurant">
                             <button class="new-button" type="button">New</button>
-                        </div>
+                        </div></a>
                         <div class="restaurant-info-container">
-                            <div class="restaurant-info-text">
+                            <a href="the-full-palette.html"><div class="restaurant-info-text">
                                 <h2>The Full Palette</h2>
                                 <p>Paris</p>
-                            </div>
+                            </div></a>
                             <i class="fa-regular fa-heart fa-xl"></i>
                         </div>
                     </div>
 
-                    <div class="restaurant-card" id="the-enchanted-plate-card">
+                    <a href="the-enchanted-plate.html"><div class="restaurant-card" id="the-enchanted-plate-card">
                         <div class="restaurant-image-container">
-                            <img id="the-enchanted-plate-image" src="images/the-enchanted-plate.jpg" alt="Photo of a meal at The Enchanted Plate Restaurant">
+                            <img id="the-enchanted-plate-image" src="../images/the-enchanted-plate.jpg" alt="Photo of a meal at The Enchanted Plate Restaurant">
                             <button class="new-button" type="button">New</button>
-                        </div>
+                        </div></a>
                         <div class="restaurant-info-container">
-                            <div class="restaurant-info-text">
+                            <a href="the-enchanted-plate.html"><div class="restaurant-info-text">
                                 <h2>The Enchanted Plate</h2>
                                 <p>Paris</p>
-                            </div>
+                            </div></a>
                             <div class="heart-container">
                                 <i class="fa-regular fa-hand-pointer fa-xl"></i>
                                 <i class="fa-solid fa-heart fa-xl heart-full"></i>
@@ -90,28 +90,28 @@
                         </div>
                     </div>
 
-                    <div class="restaurant-card" id="bastille-card">
+                    <a href="bastille.html"><div class="restaurant-card" id="bastille-card">
                         <div class="restaurant-image-container">
-                            <img id="bastille-image" src="images/bastille.jpg" alt="Photo of a meal at Bastille Restaurant">
-                        </div>
+                            <img id="bastille-image" src="../images/bastille.jpg" alt="Photo of a meal at Bastille Restaurant">
+                        </div></a>
                         <div class="restaurant-info-container">
-                            <div class="restaurant-info-text">
+                            <a href="bastille.html"><div class="restaurant-info-text">
                                 <h2>Bastille</h2>
                                 <p>Paris</p>
-                            </div>
+                            </div></a>
                             <i class="fa-regular fa-heart fa-xl"></i>
                         </div>
                     </div>
 
-                    <div class="restaurant-card" id="le-gourmand-card">
+                    <a href="le-gourmand.html"><div class="restaurant-card" id="le-gourmand-card">
                         <div class="restaurant-image-container">
-                            <img id="le-gourmand-image" src="images/le-gourmand.jpg" alt="Photo of a meal at Le Gourmand Restaurant">
-                        </div>
+                            <img id="le-gourmand-image" src="../images/le-gourmand.jpg" alt="Photo of a meal at Le Gourmand Restaurant">
+                        </div></a>
                         <div class="restaurant-info-container">
-                            <div class="restaurant-info-text">
+                            <a href="le-gourmand.html"><div class="restaurant-info-text">
                                 <h2>Le Gourmand</h2>
                                 <p>Paris</p>
-                            </div>
+                            </div></a>
                             <i class="fa-regular fa-heart fa-xl"></i>
                         </div>
                     </div>
@@ -121,5 +121,14 @@
 </main>
 
 <footer>
+    <div class="footer-container">
+        <img id="footer-logo" src="../images/ohmyfood-logo.png" alt="Oh My Food company logo in white">
+        <ul>
+            <li><i class="fa-solid fa-utensils"></i>Suggest a restaurant</li>
+            <li><i class="fa-solid fa-handshake"></i>Become a partner</li>
+            <li>Legal</li>
+            <li>Contact</li>
+        </ul>
+    </div>
 </footer>
 </body>

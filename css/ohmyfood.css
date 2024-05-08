@@ -26,6 +26,7 @@ html {
 .header {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 #header-logo {
@@ -202,12 +203,18 @@ html {
 .restaurant-info-text h2 {
     font-family: Roboto-Regular;
     margin: 20px 0 0 20px;
+    color: black;
 }
 
 .restaurant-info-text p {
     font-family: Roboto-Regular;
     font-size: 20px;
     margin: 0 0 20px 20px;
+    color: black;
+}
+
+.restaurant-info-container a {
+    text-decoration: none;
 }
 
 .fa-heart {
@@ -230,7 +237,41 @@ html {
     left: 20%;
 }
 
+.footer-container {
+    background-color: #353535;
+    padding-bottom: 50px;
+}
+
+#footer-logo {
+    width: 40%;
+    -webkit-filter: invert(100%);
+    padding: 40px 0 0 40px;
+}
+
+.footer-container ul {
+    list-style: none;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.fa-utensils, .fa-handshake {
+    padding-right: 15px;
+}
+
 /* Menu Pages CSS */
+
+.restaurant-name h1 {
+    font-family: Shrikhand;
+}
+
+.fa-arrow-left {
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
 /* The Enchanted Plate CSS */
 /* Bastille CSS */
 /* Le Gourmand CSS */
