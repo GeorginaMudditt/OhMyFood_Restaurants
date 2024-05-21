@@ -1,0 +1,11 @@
+{
+  "name": "georginamudditt_3_05052024_a",
+  "version": "1.0.0",
+  "description": "Ohmyfood OpenClassrooms Project3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
