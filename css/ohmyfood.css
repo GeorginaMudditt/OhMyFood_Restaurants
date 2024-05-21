@@ -9,17 +9,17 @@ html {
 
 @font-face {
     font-family: Shrikhand;
-    src: url(../fonts/Shrikhand-Regular.ttf) format('truetype');
+    src: url(../fonts/Shrikhand-Regular.ttf);
     font-display: swap;
 }
 @font-face {
     font-family: Roboto-Regular;
-    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    src: url(../fonts/Roboto-Regular.ttf);
     font-display: swap;
 }
 @font-face {
     font-family: Roboto-Bold;
-    src: url(../fonts/Roboto-Bold.ttf) format ('truetype');
+    src: url(../fonts/Roboto-Bold.ttf);
     font-display: swap;
 }
 
@@ -74,8 +74,8 @@ html {
     align-items: center;
 }
 
-.explore-container h1 { /*cannot get the right bold font working here */
-    font-family: Roboto-Regular;
+.explore-container h1 {
+    font-family: Roboto-Bold;
     font-size: 28px;
     font-weight:900;
     text-align: center;
@@ -100,8 +100,8 @@ html {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.how-it-works-container h1 { /* also needs to be bold heading here */
-    font-family: Roboto-Regular;
+.how-it-works-container h1 {
+    font-family: Roboto-Bold;
     font-size: 28px;
     margin: 50px 0 20px 20px;
 }
@@ -156,8 +156,8 @@ html {
     align-items: center;
 }
 
-.restaurant-container h1 { /* also needs to be bold heading here */
-    font-family: Roboto-Regular;
+.restaurant-container h1 {
+    font-family: Roboto-Bold;
     font-size: 28px;
     padding: 50px 0 20px 20px;
 }
@@ -245,6 +245,7 @@ html {
 #footer-logo {
     width: 40%;
     -webkit-filter: invert(100%);
+    filter: invert(100%);
     padding: 40px 0 0 40px;
 }
 
@@ -264,6 +265,7 @@ html {
 
 .restaurant-name h1 {
     font-family: Shrikhand;
+    padding-left: 20px;
 }
 
 .fa-arrow-left {
