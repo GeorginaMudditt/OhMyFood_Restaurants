@@ -1,0 +1,23 @@
+.footer-container {
+    background-color: $colour-footer;
+    padding-bottom: 50px;
+}
+
+#footer-logo {
+    width: 40%;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    padding: 40px 0 0 40px;
+}
+
+.footer-container ul {
+    list-style: none;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.fa-utensils, .fa-handshake {
+    padding-right: 15px;
+}

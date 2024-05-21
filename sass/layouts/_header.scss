@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#header-logo {
+    width: 40%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.fa-arrow-left {
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.restaurant-name h1 {
+    font-family: Shrikhand;
+    padding-left: 20px;
+}

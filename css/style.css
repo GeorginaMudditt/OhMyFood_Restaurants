@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -369,6 +377,53 @@ input {
   font-family: Roboto-Bold;
   src: url(../fonts/Roboto-Bold.ttf);
   font-display: swap;
+}
+.footer-container {
+  background-color: #353535;
+  padding-bottom: 50px;
+}
+
+#footer-logo {
+  width: 40%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  padding: 40px 0 0 40px;
+}
+
+.footer-container ul {
+  list-style: none;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: white;
+  line-height: 1.5;
+}
+
+.fa-utensils, .fa-handshake {
+  padding-right: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#header-logo {
+  width: 40%;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.fa-arrow-left {
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.restaurant-name h1 {
+  font-family: Shrikhand;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
