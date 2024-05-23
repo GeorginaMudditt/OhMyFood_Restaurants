@@ -7,7 +7,7 @@
     width: 40%;
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    padding: 40px 0 0 40px;
+    padding: 30px 0 0 30px;
 }
 
 .footer-container ul {
@@ -16,8 +16,18 @@
     font-size: 20px;
     color: white;
     line-height: 1.5;
+    padding: 30px;
 }
 
 .fa-utensils, .fa-handshake {
     padding-right: 15px;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container ul li a:hover {
+    font-family: Roboto-Bold;
 }

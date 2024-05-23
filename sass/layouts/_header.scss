@@ -5,7 +5,7 @@
 }
 
 #header-logo {
-    width: 40%;
+    width: 50%;
     justify-content: center;
     margin: 20px 0;
 }
@@ -17,7 +17,25 @@
     left: 2%;
 }
 
-.restaurant-name h1 {
-    font-family: Shrikhand;
-    padding-left: 20px;
+.location-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: $colour-background-dark;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 6px 0px inset;
+}
+
+.location-dot {
+    border: none;
+}
+
+.location-form input {
+    border: none;
+    background-color: $colour-background-dark;
+}
+
+::placeholder {
+    color: black;
+    font-family: Roboto-Regular;
+    font-size: 20px;
 }

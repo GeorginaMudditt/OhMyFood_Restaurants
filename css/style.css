@@ -378,6 +378,214 @@ input {
   src: url(../fonts/Roboto-Bold.ttf);
   font-display: swap;
 }
+.explore-container {
+  background-color: #F8F4F4;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.explore-container p {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+.explore-container button {
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.how-it-works-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  margin: 50px 20px;
+}
+
+.instruction-card-container {
+  padding-bottom: 50px;
+}
+
+.instruction-card {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  margin: 20px;
+  background-color: #F8F4F4;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 30px 0px;
+}
+
+.instruction-card:hover {
+  background-color: #F8ECFC;
+}
+
+.instruction-number {
+  margin-right: 20px;
+  color: white;
+  background-color: #9356DC;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+}
+
+.instruction-icon {
+  margin: 0 20px 0 50px;
+  color: grey;
+}
+
+.instruction-icon:hover { /* Can I get this icon to change colour when the entire instruction-card is hovered? */
+  color: #9356DC;
+}
+
+.instruction-card p {
+  font-family: Roboto-Bold;
+  font-size: 18px;
+}
+
+.restaurant-container {
+  background-color: #F8F4F4;
+}
+
+.restaurant-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  color: black;
+  padding: 40px 0 20px 20px;
+}
+
+.restaurant-card {
+  width: 90%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.restaurant-image-container {
+  position: relative;
+}
+
+.restaurant-image-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restaurant-image-container button {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  background-color: #99E2D0;
+  color: #129274;
+  font-family: Roboto-Bold;
+  font-size: 18px;
+  padding: 5px 25px;
+  border: 0;
+  border-radius: 10%;
+  width: 25%;
+}
+
+.restaurant-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-info-text h2 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding: 20px 0 10px 20px;
+  color: black;
+}
+
+.restaurant-info-text p {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  margin: 0 0 20px 20px;
+  color: black;
+}
+
+.restaurant-info-container a {
+  text-decoration: none;
+}
+
+.fa-heart {
+  align-content: center;
+  margin-right: 20px;
+}
+
+.restaurant-menu-container {
+  background-color: #F8F4F4;
+  border-radius: 20px;
+}
+
+.restaurant-name h1 {
+  font-family: Shrikhand;
+  font-size: 32px;
+  padding: 30px;
+}
+
+.menu-item-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.restaurant-menu h2 {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.menu-item-card-text h3 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.menu-item-card-text p {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+}
+
+.restaurant-menu h4 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+}
+
 .footer-container {
   background-color: #353535;
   padding-bottom: 50px;
@@ -387,7 +595,7 @@ input {
   width: 40%;
   -webkit-filter: invert(100%);
   filter: invert(100%);
-  padding: 40px 0 0 40px;
+  padding: 30px 0 0 30px;
 }
 
 .footer-container ul {
@@ -396,10 +604,20 @@ input {
   font-size: 20px;
   color: white;
   line-height: 1.5;
+  padding: 30px;
 }
 
 .fa-utensils, .fa-handshake {
   padding-right: 15px;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container ul li a:hover {
+  font-family: Roboto-Bold;
 }
 
 .header {
@@ -409,7 +627,7 @@ input {
 }
 
 #header-logo {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   margin: 20px 0;
 }
@@ -421,9 +639,33 @@ input {
   left: 2%;
 }
 
-.restaurant-name h1 {
-  font-family: Shrikhand;
-  padding-left: 20px;
+.location-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #EAEAEA;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 6px 0px inset;
+}
+
+.location-dot {
+  border: none;
+}
+
+.location-form input {
+  border: none;
+  background-color: #EAEAEA;
+}
+
+::placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+.restaurant-image-top img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
