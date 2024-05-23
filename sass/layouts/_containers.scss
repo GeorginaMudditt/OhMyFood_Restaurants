@@ -172,8 +172,19 @@
 
 .restaurant-menu-container {
     background-color: $colour-background-light;
-    border-radius: 20px;
-} // Need to make this container overlap the image above
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+} 
+
+.restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
 
 .restaurant-name h1 {
     font-family: Shrikhand;
@@ -196,6 +207,13 @@
     font-family: Roboto-Regular;
     font-size: 20px;
     margin-left: 30px;
+    padding: 20px 0 10px 0;
+}
+
+.partial-underline {
+    width: 60px;
+    border: 3px solid $colour-tertiary;
+    margin-left: 30px;
 }
 
 .menu-item-card-text h3 {
@@ -209,7 +227,30 @@
     font-size: 18px;
 }
 
+.restaurant-menu {
+    display: flex;
+    flex-direction: column;
+}
+
 .restaurant-menu h4 {
     font-family: Roboto-Bold;
     font-size: 20px;
+}
+
+.order-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order-button-container button {
+    padding: 20px 60px;
+    margin: 20px 0 30px 0;
+    border: none;
+    border-radius: 30px;
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient($colour-secondary, $colour-primary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
 }
