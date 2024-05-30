@@ -79,8 +79,6 @@ a {
  */
 abbr[title] {
   border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -404,16 +402,22 @@ input {
   padding-bottom: 40px;
 }
 
-.explore-container button {
+.explore-button {
   padding: 20px;
   border: none;
-  border-radius: 30px;
   font-family: Roboto-Regular;
   font-size: 20px;
   font-weight: bold;
   color: white;
+  text-decoration: none;
+  border-radius: 30px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.explore-button:hover {
+  background-image: linear-gradient(#ffafe9, #be9aea);
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
 }
 
 .how-it-works-container h1 {
@@ -617,7 +621,7 @@ input {
   justify-content: center;
 }
 
-.order-button-container button {
+.order-button {
   padding: 20px 60px;
   margin: 20px 0 30px 0;
   border: none;
@@ -705,6 +709,34 @@ input {
   font-size: 20px;
 }
 
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  background-color: #EAEAEA;
+  display: none;
+}
+
+.loading-spinner {
+  border: 20px solid #FF79DA;
+  border-right: 20px solid #9356DC;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spinner 3s linear;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  position: absolute;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .restaurant-image-top img {
   width: 100%;
   height: 300px;

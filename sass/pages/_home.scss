@@ -1,0 +1,24 @@
+.loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    background-color: $colour-background-dark;
+    display: none;
+}
+
+.loading-spinner {
+    border: 20px solid $colour-secondary;
+    border-right: 20px solid $colour-primary;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spinner 3s linear;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    position: absolute;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

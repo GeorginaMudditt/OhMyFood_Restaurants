@@ -1,26 +1,26 @@
 // Base
-@import "base/_base";
-@import "base/_normalise";
-@import "base/_reset";
-@import "base/_typography";
+@import "base/base";
+@import "base/normalise";
+@import "base/reset";
+@import "base/typography";
 
 // Utils
-@import "utils/_functions";
-@import "utils/_mixins";
-@import "utils/_variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
 
 // Layouts
-@import "layouts/_containers";
-@import "layouts/_footer";
-@import "layouts/_header";
+@import "layouts/containers";
+@import "layouts/footer";
+@import "layouts/header";
 
 // Components
-@import "components/_buttons";
+@import "components/buttons";
 
 // Pages
-@import "pages/_bastille";
-@import "pages/_home";
-@import "pages/_le-gourmand";
+@import "pages/bastille";
+@import "pages/home";
+@import "pages/le-gourmand";
 @import "pages/menu-pages";
-@import "pages/_the-enchanted-plate";
-@import "pages/_the-full-palette";
+@import "pages/the-enchanted-plate";
+@import "pages/the-full-palette";

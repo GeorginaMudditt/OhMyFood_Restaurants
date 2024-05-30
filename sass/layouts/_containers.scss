@@ -24,16 +24,22 @@
     padding-bottom: 40px;
 }
 
-.explore-container button {
+.explore-button {
     padding: 20px;
     border: none;
-    border-radius: 30px;
     font-family: Roboto-Regular;
     font-size: 20px;
     font-weight: bold;
     color: white;
+    text-decoration: none;
+    border-radius: 30px;
     background-image: linear-gradient($colour-secondary, $colour-primary);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.explore-button:hover {
+    background-image: linear-gradient(#ffafe9, #be9aea);
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
 }
 
 // How it works Container (Homepage)
@@ -243,7 +249,7 @@
     justify-content: center;
 }
 
-.order-button-container button {
+.order-button {
     padding: 20px 60px;
     margin: 20px 0 30px 0;
     border: none;
