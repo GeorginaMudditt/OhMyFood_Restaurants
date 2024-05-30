@@ -4,3 +4,34 @@
     height: 300px;
     object-fit: cover;
 }
+
+.heart {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: $colour-background-dark;
+    transform: rotate(45deg);
+    padding-top: 20px;
+}
+
+.heart:before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $colour-background-dark;
+}
+
+.heart:after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $colour-background-dark;
+}
