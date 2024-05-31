@@ -200,7 +200,12 @@
     padding: 30px;
 }
 
+// .entrees-container {
+//     // position: absolute
+// }
+
 .menu-item-card-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;

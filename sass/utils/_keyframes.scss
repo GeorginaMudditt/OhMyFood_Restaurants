@@ -1,0 +1,28 @@
+.entree {
+    animation: mymove-entree 10s 1;
+}
+
+.main {
+    animation: mymove-main 15s 1;
+}
+
+.dessert {
+    animation: mymove-dessert 20s 1;
+}
+
+@keyframes mymove-entree {
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}
+
+@keyframes mymove-main {
+    0% {opacity:0;}
+    30% {opacity:0;}
+    100% {opacity: 1;}
+}
+
+@keyframes mymove-dessert {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity: 1;}
+}
