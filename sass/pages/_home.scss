@@ -4,13 +4,30 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    animation: spinner 3s linear;
-    animation-delay: 1s;
-    animation-iteration-count: 2;
     position: absolute;
+    left: 35%;
+    top: 20%;
+    animation: disappear 5s forwards, spin 10s;
+
 }
 
-@keyframes spinner {
+@keyframes disappear {
+    0% {opacity:1;}
+    95% {opacity:1;}
+    100% {opacity: 0;}
+}
+
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.body {
+    animation: mymove-home 2s 1;
+}
+
+@keyframes mymove-home {
+    0% {opacity:0;}
+    95% {opacity:0;}
+    100% {opacity: 1;}
 }

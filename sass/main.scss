@@ -5,9 +5,6 @@
 @import "base/typography";
 
 // Utils
-@import "utils/functions";
-@import "utils/keyframes";
-@import "utils/mixins";
 @import "utils/variables";
 
 // Layouts
@@ -15,13 +12,6 @@
 @import "layouts/footer";
 @import "layouts/header";
 
-// Components
-@import "components/buttons";
-
 // Pages
-@import "pages/bastille";
 @import "pages/home";
-@import "pages/le-gourmand";
 @import "pages/menu-pages";
-@import "pages/the-enchanted-plate";
-@import "pages/the-full-palette";

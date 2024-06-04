@@ -394,48 +394,6 @@ input {
   src: url(../fonts/Roboto-Bold.ttf);
   font-display: swap;
 }
-.entree {
-  animation: mymove-entree 10s 1;
-}
-
-.main {
-  animation: mymove-main 15s 1;
-}
-
-.dessert {
-  animation: mymove-dessert 20s 1;
-}
-
-@keyframes mymove-entree {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes mymove-main {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes mymove-dessert {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .explore-container {
   background-color: #F8F4F4;
   padding: 40px 20px;
@@ -504,6 +462,10 @@ input {
   background-color: #F8ECFC;
 }
 
+.instruction-card:hover .instruction-icon {
+  color: #9356DC;
+}
+
 .instruction-number {
   margin-right: 20px;
   color: white;
@@ -517,10 +479,6 @@ input {
 .instruction-icon {
   margin: 0 20px 0 50px;
   color: grey;
-}
-
-.instruction-icon:hover { /* Can I get this icon to change colour when the entire instruction-card is hovered? */
-  color: #9356DC;
 }
 
 .instruction-card p {
@@ -635,8 +593,9 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
   margin: 20px;
-  padding: 20px;
+  padding-left: 20px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -674,6 +633,7 @@ input {
 .restaurant-menu h4 {
   font-family: Roboto-Bold;
   font-size: 20px;
+  padding-right: 20px;
 }
 
 .order-button-container {
@@ -779,13 +739,24 @@ input {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  animation: spinner 3s linear;
-  animation-delay: 1s;
-  animation-iteration-count: 2;
   position: absolute;
+  left: 35%;
+  top: 20%;
+  animation: disappear 5s forwards, spin 10s;
 }
 
-@keyframes spinner {
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -793,10 +764,96 @@ input {
     transform: rotate(360deg);
   }
 }
+.body {
+  animation: mymove-home 2s 1;
+}
+
+@keyframes mymove-home {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .restaurant-image-top img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.entree {
+  animation: mymove-entree 10s 1;
+}
+
+.main {
+  animation: mymove-main 15s 1;
+}
+
+.dessert {
+  animation: mymove-dessert 20s 1;
+}
+
+@keyframes mymove-entree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mymove-main {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mymove-dessert {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.green-tick-box {
+  height: 80px;
+  width: 160px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+
+.green-tick-box i {
+  color: white;
+  animation: somersault 3s;
+}
+
+@keyframes somersault {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.menu-item-card-container:hover .green-tick-box {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
