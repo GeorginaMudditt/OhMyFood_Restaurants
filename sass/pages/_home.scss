@@ -1,13 +1,14 @@
 .loading-spinner {
-    border: 20px solid $colour-secondary;
-    border-right: 20px solid $colour-primary;
+    border: 10px solid $colour-secondary;
+    border-right: 10px solid $colour-primary;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    left: 25%;
-    top: 20%;
-    animation: disappear 3s forwards, spin 3s;
+    left: 38%;
+    top: 35%;
+    animation: disappear 4s forwards, spin 4s, glow 1s infinite; 
+    box-shadow: 0 0 10px $colour-primary;
 }
 
 @keyframes disappear {
@@ -21,6 +22,12 @@
     100% { transform: rotate(360deg); }
 }
 
+@keyframes glow {
+    0% {box-shadow: 0 0 10px $colour-primary;}
+    50% {box-shadow: 0 0 20px $colour-primary;}
+    100% {box-shadow: 0 0 10px $colour-primary;}
+}
+
 .body {
     animation: mymove-home 4s 1;
 }
@@ -29,4 +36,34 @@
     0% {opacity:0;}
     95% {opacity:0;}
     100% {opacity: 1;}
+}
+
+.heart-container {
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heart-empty, .heart-filled {
+    position:absolute;
+    font-size: 30px;
+}
+.heart-empty {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+.heart-filled {
+    color: $colour-primary;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.heart-container:hover .heart-empty {
+    opacity: 0;
+}
+
+.heart-container:hover .heart-filled {
+    opacity: 1;
 }
