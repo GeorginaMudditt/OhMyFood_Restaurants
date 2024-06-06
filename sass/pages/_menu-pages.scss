@@ -5,6 +5,8 @@
     object-fit: cover;
 }
 
+// Animation: entrees appear gradually first, then mains, then desserts
+
 .entree {
     animation: mymove-entree 10s 1;
 }
@@ -34,9 +36,11 @@
     100% {opacity: 1;}
 }
 
+// Animation: green tick box appears when hovering over menu item card
+
 .green-tick-box {
     height: 80px;
-    width: 160px;
+    width: 80px;
     background-color: $colour-tertiary;
     display: flex;
     justify-content: center;
@@ -44,20 +48,81 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: none;
+    position:absolute;
+    right: 0;
+    transform: translateX(100%);
 }
 
 .green-tick-box i {
-    color: white;
-    animation: somersault 3s;
+    color: white;  
+    font-size: 40px;
+    position: absolute;
+    right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// green tick box slides in from right to left
+
+.menu-item-card-container:hover .green-tick-box {
+    display: flex;
+    // position: static;
+    animation: slide-in 2s forwards;   
+}
+
+@keyframes slide-in {
+    // 0% { transform: translateX(100%); }
+    // 100% { transform: translateX(0%); }
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(0%)
+    }
+}
+
+// tick icon also slides in from right to left, spinning as it enters
+
+.menu-item-card-container:hover .green-tick-box i {
+    display: flex;
+    position: static;
+    animation: somersault 2s, slide-in-icon 2s forwards;
+    width: 100%;
 }
 
 @keyframes somersault {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    100% { transform: rotate(1080deg); }
+}
+@keyframes slide-in-icon {
+    0% {right: -100px;}
+    100% {right: 30px;}
 }
 
-.menu-item-card-container:hover .green-tick-box {
-    display: flex;
+// price slides over from right to left when green tick box slides in
+
+.menu-item-card-container:hover h4 {
+    transform: translateX(-70px);
+    width: 20%;
 }
-    
+
+// text is trimmed and ellipsis added when green tick box slides in
+
+.menu-item-card-container:hover h3, .menu-item-card-container:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+}
+
+// modifications made to the cards with longer text
+
+#shepherds-pie:hover h3, #shepherds-pie:hover p, #chocolate-hazelnut-macaron:hover h3, #chocolate-hazelnut-macaron:hover p, #vegetable-soup:hover h3, #vegetable-soup:hover p, #roast-chicken:hover h3, #roast-chicken:hover p {
+    width: 50%;
+}
+
+#shepherds-pie:hover h4, #chocolate-hazelnut-macaron:hover h4, #vegetable-soup:hover h4, #roast-chicken:hover h4 {
+    transform: translateX(-140px);
+    width: 20%;
+}
 

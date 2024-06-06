@@ -5,10 +5,9 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 20%;
-    animation: disappear 5s forwards, spin 10s;
-
+    animation: disappear 3s forwards, spin 3s;
 }
 
 @keyframes disappear {
@@ -23,7 +22,7 @@
 }
 
 .body {
-    animation: mymove-home 2s 1;
+    animation: mymove-home 4s 1;
 }
 
 @keyframes mymove-home {

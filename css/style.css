@@ -740,9 +740,9 @@ input {
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 35%;
+  left: 25%;
   top: 20%;
-  animation: disappear 5s forwards, spin 10s;
+  animation: disappear 3s forwards, spin 3s;
 }
 
 @keyframes disappear {
@@ -765,7 +765,7 @@ input {
   }
 }
 .body {
-  animation: mymove-home 2s 1;
+  animation: mymove-home 4s 1;
 }
 
 @keyframes mymove-home {
@@ -829,7 +829,7 @@ input {
 }
 .green-tick-box {
   height: 80px;
-  width: 160px;
+  width: 80px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
@@ -837,11 +837,38 @@ input {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   display: none;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
 }
 
 .green-tick-box i {
   color: white;
-  animation: somersault 3s;
+  font-size: 40px;
+  position: absolute;
+  right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-item-card-container:hover .green-tick-box {
+  display: flex;
+  animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.menu-item-card-container:hover .green-tick-box i {
+  display: flex;
+  position: static;
+  animation: somersault 2s, slide-in-icon 2s forwards;
+  width: 100%;
 }
 
 @keyframes somersault {
@@ -849,11 +876,36 @@ input {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(1080deg);
   }
 }
-.menu-item-card-container:hover .green-tick-box {
-  display: flex;
+@keyframes slide-in-icon {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 30px;
+  }
+}
+.menu-item-card-container:hover h4 {
+  transform: translateX(-70px);
+  width: 20%;
+}
+
+.menu-item-card-container:hover h3, .menu-item-card-container:hover p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 60%;
+}
+
+#shepherds-pie:hover h3, #shepherds-pie:hover p, #chocolate-hazelnut-macaron:hover h3, #chocolate-hazelnut-macaron:hover p, #vegetable-soup:hover h3, #vegetable-soup:hover p, #roast-chicken:hover h3, #roast-chicken:hover p {
+  width: 50%;
+}
+
+#shepherds-pie:hover h4, #chocolate-hazelnut-macaron:hover h4, #vegetable-soup:hover h4, #roast-chicken:hover h4 {
+  transform: translateX(-140px);
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
