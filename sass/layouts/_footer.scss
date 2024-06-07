@@ -31,3 +31,30 @@
 .footer-container ul li a:hover {
     font-family: Roboto-Bold;
 }
+
+// Media queries - changes to view on tablet and desktop
+// Media queries - Footer (all pages)
+
+@media all and (min-width: 769px) {
+
+ .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+    
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    
+.footer-links ul li {
+    padding: 0 50px 25px 50px;
+} 
+
+#footer-logo {
+    width: 25%;
+}
+}
