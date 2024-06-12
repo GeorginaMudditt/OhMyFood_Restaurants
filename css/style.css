@@ -593,6 +593,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   height: 80px;
   margin: 20px;
   padding-left: 20px;
@@ -801,6 +802,7 @@ input {
   position: absolute;
   animation: disappear 4s forwards, spin 4s, glow 1s infinite;
   box-shadow: 0 0 10px #9356DC;
+  z-index: -1;
 }
 
 .loading {
@@ -813,6 +815,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 }
 
 @keyframes disappear {
@@ -970,17 +973,17 @@ input {
 }
 
 @keyframes slide-in {
-  from {
+  0% {
     transform: translateX(100%);
   }
-  to {
+  100% {
     transform: translateX(0%);
   }
 }
 .menu-item-card-container:hover .green-tick-box i {
   display: flex;
   position: static;
-  animation: somersault 2s, slide-in-icon 2s forwards;
+  animation: somersault 2s, slide-in-icon 1s forwards;
   width: 100%;
 }
 
@@ -989,7 +992,7 @@ input {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(1080deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes slide-in-icon {
@@ -1003,6 +1006,7 @@ input {
 .menu-item-card-container:hover h4 {
   transform: translateX(-70px);
   width: 20%;
+  transition: transform 1s ease-in-out;
 }
 
 .menu-item-card-container:hover h3, .menu-item-card-container:hover p {

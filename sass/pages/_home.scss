@@ -5,10 +5,9 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    // left: 38%;
-    // top: 35%;
     animation: disappear 4s forwards, spin 4s, glow 1s infinite; 
     box-shadow: 0 0 10px $colour-primary;
+    z-index: -1;
 }
 
 .loading {
@@ -20,7 +19,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
+    z-index: -1;
 }
 
 @keyframes disappear {
