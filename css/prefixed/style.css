@@ -1,0 +1,1323 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+       appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-display: swap;
+}
+.explore-container {
+  background-color: #F8F4F4;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.explore-container p {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+.explore-button {
+  padding: 20px;
+  border: none;
+  font-family: Roboto-Regular;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.explore-button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffafe9), to(#be9aea));
+  background-image: linear-gradient(#ffafe9, #be9aea);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
+}
+
+.how-it-works-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  margin: 50px 20px;
+}
+
+.instruction-card-container {
+  padding-bottom: 50px;
+}
+
+.instruction-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  background-color: #F8F4F4;
+  border-radius: 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 30px 0px;
+}
+
+.instruction-card:hover {
+  background-color: #F8ECFC;
+}
+
+.instruction-card:hover .instruction-icon {
+  color: #9356DC;
+}
+
+.instruction-number {
+  margin-right: 20px;
+  color: white;
+  background-color: #9356DC;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+}
+
+.instruction-icon {
+  margin: 0 20px 0 50px;
+  color: grey;
+}
+
+.instruction-card p {
+  font-family: Roboto-Bold;
+  font-size: 18px;
+}
+
+.restaurant-container {
+  background-color: #F8F4F4;
+}
+
+.restaurant-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant-container h1 {
+  font-family: Roboto-Bold;
+  font-size: 28px;
+  color: black;
+  padding: 40px 0 20px 20px;
+}
+
+.restaurant-card {
+  width: 90%;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.restaurant-image-container {
+  position: relative;
+}
+
+.restaurant-image-container img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new-button {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  background-color: #99E2D0;
+  color: #129274;
+  font-family: Roboto-Bold;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 25px;
+  border: 0;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.restaurant-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant-info-text h2 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding: 20px 0 10px 20px;
+  color: black;
+}
+
+.restaurant-info-text p {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  margin: 0 0 20px 20px;
+  color: black;
+}
+
+.restaurant-info-container a {
+  text-decoration: none;
+}
+
+.fa-heart {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-right: 20px;
+}
+
+.restaurant-menu-container {
+  background-color: #F8F4F4;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  top: -30px;
+  margin-bottom: -30px;
+}
+
+.restaurant-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant-name h1 {
+  font-family: Shrikhand;
+  font-size: 32px;
+  padding: 30px;
+}
+
+.menu-item-card-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 80px;
+  margin: 20px;
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.restaurant-menu h2 {
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 20px 0 10px 0;
+}
+
+.partial-underline {
+  width: 60px;
+  border: 3px solid #99E2D0;
+  margin-left: 30px;
+}
+
+.menu-item-card-text h3 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.menu-item-card-text p {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+}
+
+.restaurant-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurant-menu h4 {
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.order-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-button {
+  padding: 20px 60px;
+  margin: 20px 0 30px 0;
+  border: none;
+  border-radius: 30px;
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.order-button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffafe9), to(#be9aea));
+  background-image: linear-gradient(#ffafe9, #be9aea);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
+}
+
+@media all and (min-width: 769px) {
+  .how-it-works-container h1 {
+    text-align: center;
+  }
+  .instruction-card-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .instruction-card {
+    max-width: 70%;
+  }
+  .instruction-card p {
+    padding-right: 10px;
+  }
+  .restaurant-container h1 {
+    text-align: center;
+  }
+  .restaurant-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .restaurant-card {
+    width: 40%;
+  }
+  .menu-items-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu-item-card-container {
+    width: 400px;
+  }
+}
+.footer-container {
+  background-color: #353535;
+  padding-bottom: 50px;
+}
+
+#footer-logo {
+  width: 40%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  padding: 30px 0 0 30px;
+}
+
+.footer-container ul {
+  list-style: none;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: white;
+  line-height: 1.5;
+  padding: 30px;
+}
+
+.fa-utensils, .fa-handshake {
+  padding-right: 15px;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container ul li a:hover {
+  font-family: Roboto-Bold;
+}
+
+@media all and (min-width: 769px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-links ul li {
+    padding: 0 50px 25px 50px;
+  }
+  #footer-logo {
+    width: 25%;
+  }
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#header-logo {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.fa-arrow-left {
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.location-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  background-color: #EAEAEA;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 6px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 6px 0px inset;
+}
+
+.location-dot {
+  border: none;
+}
+
+.location-form input {
+  border: none;
+  background-color: #EAEAEA;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+::-moz-placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+:-ms-input-placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: black;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+}
+
+@media all and (min-width: 769px) {
+  #header-logo {
+    width: 25%;
+  }
+}
+.loading-spinner {
+  border: 10px solid #FF79DA;
+  border-right: 10px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-animation: disappear 4s forwards, spin 4s, glow 1s infinite;
+          animation: disappear 4s forwards, spin 4s, glow 1s infinite;
+  -webkit-box-shadow: 0 0 10px #9356DC;
+          box-shadow: 0 0 10px #9356DC;
+  z-index: -1;
+}
+
+.loading {
+  -webkit-animation: disappear 4s forwards;
+          animation: disappear 4s forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 10px #9356DC;
+            box-shadow: 0 0 10px #9356DC;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px #9356DC;
+            box-shadow: 0 0 20px #9356DC;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px #9356DC;
+            box-shadow: 0 0 10px #9356DC;
+  }
+}
+@keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 10px #9356DC;
+            box-shadow: 0 0 10px #9356DC;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px #9356DC;
+            box-shadow: 0 0 20px #9356DC;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px #9356DC;
+            box-shadow: 0 0 10px #9356DC;
+  }
+}
+.body {
+  -webkit-animation: mymove-home 4s 1;
+          animation: mymove-home 4s 1;
+}
+
+@-webkit-keyframes mymove-home {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mymove-home {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.heart-empty, .heart-filled {
+  position: absolute;
+  font-size: 30px;
+}
+
+.heart-empty {
+  opacity: 1;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+.heart-filled {
+  color: #9356DC;
+  opacity: 0;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+.heart-container:hover .heart-empty {
+  opacity: 0;
+}
+
+.heart-container:hover .heart-filled {
+  opacity: 1;
+}
+
+.restaurant-image-top img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.entree {
+  -webkit-animation: mymove-entree 10s 1;
+          animation: mymove-entree 10s 1;
+}
+
+.main {
+  -webkit-animation: mymove-main 15s 1;
+          animation: mymove-main 15s 1;
+}
+
+.dessert {
+  -webkit-animation: mymove-dessert 20s 1;
+          animation: mymove-dessert 20s 1;
+}
+
+@-webkit-keyframes mymove-entree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mymove-entree {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mymove-main {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mymove-main {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mymove-dessert {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mymove-dessert {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.green-tick-box {
+  height: 80px;
+  width: 80px;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.green-tick-box i {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-item-card-container:hover .green-tick-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: slide-in 2s forwards;
+          animation: slide-in 2s forwards;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+.menu-item-card-container:hover .green-tick-box i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  -webkit-animation: somersault 2s, slide-in-icon 1s forwards;
+          animation: somersault 2s, slide-in-icon 1s forwards;
+  width: 100%;
+}
+
+@-webkit-keyframes somersault {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes somersault {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-in-icon {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 30px;
+  }
+}
+@keyframes slide-in-icon {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 30px;
+  }
+}
+.menu-item-card-container:hover h4 {
+  -webkit-transform: translateX(-70px);
+      -ms-transform: translateX(-70px);
+          transform: translateX(-70px);
+  width: 20%;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.menu-item-card-container:hover h3, .menu-item-card-container:hover p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 60%;
+}
+
+#shepherds-pie:hover h3, #shepherds-pie:hover p, #chocolate-hazelnut-macaron:hover h3, #chocolate-hazelnut-macaron:hover p, #vegetable-soup:hover h3, #vegetable-soup:hover p, #roast-chicken:hover h3, #roast-chicken:hover p {
+  width: 50%;
+}
+
+#shepherds-pie:hover h4, #chocolate-hazelnut-macaron:hover h4, #vegetable-soup:hover h4, #roast-chicken:hover h4 {
+  -webkit-transform: translateX(-140px);
+      -ms-transform: translateX(-140px);
+          transform: translateX(-140px);
+  width: 20%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvYmFzZS9fYmFzZS5zY3NzIiwiLi4vc3R5bGUuY3NzIiwiLi4vLi4vc2Fzcy9iYXNlL19ub3JtYWxpc2Uuc2NzcyIsIi4uLy4uL3Nhc3MvYmFzZS9fcmVzZXQuc2NzcyIsIi4uLy4uL3Nhc3MvYmFzZS9fdHlwb2dyYXBoeS5zY3NzIiwiLi4vLi4vc2Fzcy9sYXlvdXRzL19jb250YWluZXJzLnNjc3MiLCIuLi8uLi9zYXNzL3V0aWxzL192YXJpYWJsZXMuc2NzcyIsIi4uLy4uL3Nhc3MvbGF5b3V0cy9fZm9vdGVyLnNjc3MiLCIuLi8uLi9zYXNzL2xheW91dHMvX2hlYWRlci5zY3NzIiwiLi4vLi4vc2Fzcy9wYWdlcy9faG9tZS5zY3NzIiwiLi4vLi4vc2Fzcy9wYWdlcy9fbWVudS1wYWdlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksOEJBQUE7VUFBQSxzQkFBQTtBQ0NKOztBRENFO0VBQ0UsMkJBQUE7VUFBQSxtQkFBQTtBQ0VKOztBRENBO0VBQ0UscUJBQUE7QUNFRjs7QURBQTtFQUNFLHFCQUFBO0FDR0Y7O0FEREE7RUFDRSxxQkFBQTtBQ0lGOztBREZBO0VBQ0UscUJBQUE7QUNLRjs7QUN0QkEsMkVBQUE7QUFFQTsrRUFBQTtBQUdBOzs7RUFBQTtBQUtDO0VBQ0csaUJBQUEsRUFBQSxNQUFBO0VBQ0EsOEJBQUEsRUFBQSxNQUFBO0FEc0JKOztBQ25CRTsrRUFBQTtBQUdBOztFQUFBO0FBSUE7RUFDRSxTQUFBO0FEb0JKOztBQ2pCRTs7RUFBQTtBQUlBO0VBQ0UsY0FBQTtBRG1CSjs7QUNoQkU7OztFQUFBO0FBS0E7RUFDRSxjQUFBO0VBQ0EsZ0JBQUE7QURrQko7O0FDZkU7K0VBQUE7QUFHQTs7O0VBQUE7QUFLQTtFQUNFLCtCQUFBO1VBQUEsdUJBQUEsRUFBQSxNQUFBO0VBQ0EsU0FBQSxFQUFBLE1BQUE7RUFDQSxpQkFBQSxFQUFBLE1BQUE7QURnQko7O0FDYkU7OztFQUFBO0FBS0E7RUFDRSxpQ0FB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 */
